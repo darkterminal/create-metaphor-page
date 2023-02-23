@@ -1,8 +1,13 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
+const { createActionAuth } = require('@octokit/auth-action');
 const { Octokit } = require("@octokit/rest");
 
+const auth = createActionAuth();
+const authentication = await auth();
+
 const octokit = new Octokit({
+    auth: authentication.token,
     userAgent: 'Punk Creator',
     timeZone: 'Asia/Jakarta'
 })
