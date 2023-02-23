@@ -3,17 +3,17 @@ const github = require('@actions/github');
 const { createActionAuth } = require('@octokit/auth-action');
 const { Octokit } = require("@octokit/rest");
 
-const auth = createActionAuth();
-const authentication = await auth();
-
-const octokit = new Octokit({
-    auth: authentication.token,
-    userAgent: 'Punk Creator',
-    timeZone: 'Asia/Jakarta'
-})
-
 async function actionRun() {
     try {
+        const auth = createActionAuth();
+        const authentication = await auth();
+
+        const octokit = new Octokit({
+            auth: authentication.token,
+            userAgent: 'Punk Creator',
+            timeZone: 'Asia/Jakarta'
+        })
+        
         const owner = github.context.payload.repository.owner.name
         const repo = github.context.payload.repository.name
         const issue_number = github.context.payload.issue.number
