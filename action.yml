@@ -1,0 +1,8 @@
+name: 'Create Metaphor Page'
+description: 'Action create metaphor page'
+outputs:
+  message: # id of output
+    description: 'Metaphor creation answers'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
