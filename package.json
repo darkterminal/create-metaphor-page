@@ -1,0 +1,24 @@
+{
+  "name": "create-metaphor-page",
+  "version": "1.0.0",
+  "description": "Metaphor Page Creation - Action",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darkterminal/create-metaphor-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darkterminal/create-metaphor-page/issues"
+  },
+  "homepage": "https://github.com/darkterminal/create-metaphor-page#readme",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/github": "^5.1.1"
+  }
+}
