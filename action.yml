@@ -1,5 +1,9 @@
 name: 'Create Metaphor Page'
 description: 'Action create metaphor page'
+inputs:
+  github-token:
+    description: 'GitHub token for repo'
+    required: true
 outputs:
   message: # id of output
     description: 'Metaphor creation answers'
